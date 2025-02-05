@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Bagian Atas -->
+    <header>
+      <div class="logo" id="partner">
+        <i class="fa-solid fa-handshake" id="partner"></i>
+        <h2>Ambar</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="mailto:imanuelambar11@gmail.com">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-cta" id="follow">Follow Saya</button>
+    </header>
+    <!-- Tutup Bagian Atas -->
+
+    <div class="container" id="">
+      <div class="intro">
+        <p class="title">Hello, Virgil I Ambar Here!</p>
+        <p class="description">I'm programmer from village</p>
+        <img
+          src="/assets/foto/foto virgil.jpg"
+          alt="virgil foto 1"
+          class="img-foto"
+        />
+      </div>
+    </div>
+    <div class="parallax" id="about">
+      <div class="home">
+        <p class="title">Saya adalah Programmer</p>
+        <p class="description">Ngoding aja dulu, jagonya belakangan.</p>
+        <div class="mt-10">
+          <button
+            class="btn-cta"
+            onclick="alert('silahkan kontak nomor berikut 08777721230')"
+          >
+            Mari Kerjasama
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-item">
+            <i class="fa-solid fa-house" id="icon1"></i>
+            <p class="card-title">Saya suka baca Alkitab 24/7</p>
+            <p class="card-description">
+              Baca Alkitab adalah jalan terbaik mencari ide dan inspirasi
+            </p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-person" id="icon2"></i>
+            <p class="card-title">Programmer dengan biaya Murah</p>
+            <p class="card-description">
+              Biaya jasa yang saya berikan pasti murah dan terjamin
+            </p>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-book-bible" id="icon3"></i>
+            <p class="card-title">686 total Review costumer</p>
+            <p class="card-description">
+              Client saya sangat senang dalam bekerja sama dengan saya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer id="contact">
+        <p class="p">&copy Virgil I Ambar</p>
+        <p>085876732158</p>
+      </footer>
+    </div>
+
+    <script>
+      const partner = document.getElementById("partner");
+      partner.addEventListener("click", function () {
+        window.location.reload();
+      });
+
+      // follow saya
+
+      const instagram = document.getElementById("follow");
+      instagram.addEventListener("click", function () {
+        window.location.href = "https://www.instagram.com/virgilamb/";
+      });
+    </script>
+  </body>
+</html>

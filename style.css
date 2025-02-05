@@ -1,0 +1,300 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1a2238;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#partner {
+  font-size: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+  margin-left: 10px;
+  color: #eaeaea;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.logo:hover {
+  transform: rotate(5deg);
+  color: #ff6a3d;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+  transition: transform 0.5s ease;
+}
+
+li:hover {
+  transform: rotate(5deg);
+}
+
+a {
+  text-decoration: none;
+  color: #eaeaea;
+  transition: color 1s ease;
+}
+
+a:hover {
+  color: #ff6a3d;
+}
+
+.btn-cta {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background-color: #ff6a3d;
+  border-radius: 8px;
+  color: #eaeaea;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn-cta:hover {
+  color: #1a2238;
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+/* atas bawah dikasih kiri kanan gak */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.img-foto {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.parallax {
+  background-image: url("assets/foto/fotokecil.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: bottom;
+  height: 120vh;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1a2238;
+  color: #eaeaea;
+  font-weight: bold;
+  border: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2238;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  box-sizing: border-box;
+}
+
+.card-item {
+  height: 200px;
+  text-align: center;
+  width: 25%;
+  background-color: #f7f7f7;
+  color: #222;
+  padding: 24px;
+  box-shadow: 2px 5px 1px 2px rgba(0, 0, 0, 0.5);
+  /* margin-bottom: 50px; */
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* hp */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #1a2238;
+    z-index: 9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .home {
+    text-align: center;
+  }
+  .card {
+    margin: 0;
+  }
+  .card-item {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .intro {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .img-foto {
+    border-radius: 0;
+    padding: 0;
+  }
+  footer {
+    background-color: #1a2238;
+    /* padding-bottom: 70px; */
+    text-align: start;
+    margin-bottom: 1000px;
+  }
+  .parallax {
+    height: 0;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro {
+    margin-top: 0;
+  }
+  .card {
+    padding: 0;
+    margin-bottom: 270px;
+  }
+  .card-item {
+    margin: 5px;
+  }
+  footer {
+    margin-top: 322px;
+  }
+  .parallax {
+    height: 100%;
+  }
+}
+
+/* dekstop */
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin-top: 1px;
+  }
+  .card-item {
+    margin: 5px;
+  }
+  footer {
+    margin-top: 350px;
+  }
+}
+#icon1 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    margin-top: 400px;
+  }
+}
+
+#icon2 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin: 10px;
+}
+
+#icon3 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin: 10px;
+}
